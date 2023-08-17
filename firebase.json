@@ -11,15 +11,6 @@
       ]
     }
   ],
-  "hosting": {
-    "rewrites": [
-      {
-        "source": "/api/getfrequencydistribution",
-        "function": "getFrequencyDistribution",
-        "pinTag": true
-      }
-    ]
-  },
   "emulators": {
     "functions": {
       "port": 5001

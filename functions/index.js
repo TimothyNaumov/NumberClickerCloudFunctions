@@ -26,10 +26,6 @@ exports.getFrequencyDistribution = onRequest(async (request, response) => {
       console.error('Error retrieving data:', error);
       response.status(500).send('Error retrieving data');
     });
-
-  gamesPlayedRef.transaction((currentValue) => {
-    return (currentValue || 0) + 1;
-  });
 })
 
 exports.updateFrequencyDistribution = onValueCreated(
